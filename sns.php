@@ -1,8 +1,8 @@
-<?php
-	require 'vendor/autoload.php';
+use Aws\Exception\AwsException;
+use Aws\Sns\SnsClient;
 
-    use Aws\Exception\AwsException;
-    use Aws\Sns\SnsClient;
+<?php
+    require 'vendor/autoload.php';
 
 
     $SnSclient = new SnsClient([
@@ -15,19 +15,30 @@
     $endpoint = '+527292304369';
     $topic = 'arn:aws:sns:us-east-2:533267265993:snsTest.fifo';
 
-    $message = 'This message is sent from a Amazon SNS code sample.';
+    $message = 'This message is sent from an Amazon SNS code sample.';
     $phone = '+527292304369';
 
+    $resultMessage = '';
     try {
         $result = $SnSclient->publish([
             'Message' => $message,
             'PhoneNumber' => $phone,
         ]);
-        var_dump($result);
-        echo "Message sent successfully."
+        $resultMessage = "Message sent successfully.";
     } catch (AwsException $e) {
         // output error message if fails
         error_log($e->getMessage());
-        echo "Message failed to send."
+        $resultMessage = "Message failed to send.";
     }
 ?>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Amazon SNS Result</title>
+</head>
+<body>
+    <h1>Amazon SNS Result</h1>
+    <p><?php echo $resultMessage; ?></p>
+</body>
+</html>
