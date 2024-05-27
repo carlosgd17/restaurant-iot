@@ -1,6 +1,11 @@
-
-
-<?php
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Amazon SNS Result</title>
+</head>
+<body>
+    <h1>Amazon SNS Result</h1>
+    <?php
     require 'vendor/autoload.php';
 
     use Aws\Exception\AwsException;
@@ -31,15 +36,7 @@
         error_log($e->getMessage());
         $resultMessage = "Message failed to send.";
     }
+    echo $resultMessage;
 ?>
-
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Amazon SNS Result</title>
-</head>
-<body>
-    <h1>Amazon SNS Result</h1>
-    <p><?php echo $resultMessage; ?></p>
 </body>
 </html>
