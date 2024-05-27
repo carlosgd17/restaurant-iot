@@ -5,6 +5,7 @@
 </head>
 <body>
     <h1>Amazon SNS Result</h1>
+    <p>Result:</p>
     <?php
     require 'vendor/autoload.php';
 
@@ -30,11 +31,11 @@
             'Message' => $message,
             'PhoneNumber' => $phone,
         ]);
-        $resultMessage = "Message sent successfully.";
+        $resultMessage = "<p>Message sent successfully.</p>";
     } catch (AwsException $e) {
         // output error message if fails
         error_log($e->getMessage());
-        $resultMessage = "Message failed to send.";
+        $resultMessage = "<p>Message failed to send.</p>";
     }
     echo $resultMessage;
 ?>
