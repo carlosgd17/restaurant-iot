@@ -1,9 +1,10 @@
-use Aws\Exception\AwsException;
-use Aws\Sns\SnsClient;
+
 
 <?php
     require 'vendor/autoload.php';
 
+    use Aws\Exception\AwsException;
+    use Aws\Sns\SnsClient;
 
     $SnSclient = new SnsClient([
         'profile' => 'default',
