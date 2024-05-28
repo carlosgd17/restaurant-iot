@@ -10,7 +10,7 @@
       h4 {font-size: 0.8rem;}
       body {margin: 0;}
       /* ----------------------------------- TOPNAV STYLE */
-      .topnav {overflow: hidden; background-color: #0c6980; color: white; font-size: 1.2rem;}
+      .topnav {overflow: hidden; background-color: #FF8C00; color: white; font-size: 1.2rem;}
       /* ----------------------------------- */
       
       /* ----------------------------------- TABLE STYLE */
@@ -28,7 +28,7 @@
       }
 
       .styled-table thead tr {
-        background-color: #0c6980;
+        background-color: #FF8C00;
         color: #ffffff;
         text-align: left;
       }
