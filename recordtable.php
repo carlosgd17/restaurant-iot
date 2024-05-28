@@ -1,8 +1,9 @@
 <!DOCTYPE HTML>
 <html>
   <head>
-    <title>ESP32 WITH MYSQL DATABASE</title>
+    <title>Restaurant IoT</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="x-icon" href="https://cdn-icons-png.freepik.com/512/6357/6357665.png">
     <style>
       html {font-family: Arial; display: inline-block; text-align: center;}
       p {font-size: 1.2rem;}
@@ -101,12 +102,12 @@
   
   <body>
     <div class="topnav">
-      <h3>ESP32 WITH MYSQL DATABASE</h3>
+      <h3>Restaurant IoT</h3>
     </div>
     
     <br>
     
-    <h3 style="color: #0c6980;">ESP32_01 RECORD DATA TABLE</h3>
+    <h3 style="color: #0c6980;">Logs Table</h3>
     
     <table class="styled-table" id= "table_id">
       <thead>
