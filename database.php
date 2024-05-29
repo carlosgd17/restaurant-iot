@@ -25,7 +25,7 @@
 			$options = array(
 				PDO::MYSQL_ATTR_SSL_CA => './DigiCertGlobalRootG2.crt.pem'
 			);
-			$db = new PDO('mysql:host=restaurant-iot.mysql.database.azure.com;port=3306;dbname=restaurant-iot', 'restaurant@restaurant-iot', 'N\$TG_UW6', $options);
+			self::$cont = new PDO('mysql:host=restaurant-iot.mysql.database.azure.com;port=3306;dbname=restaurant-iot', 'restaurant@restaurant-iot', 'N\$TG_UW6', $options);
         } catch(PDOException $e) {
           die($e->getMessage()); 
         }
