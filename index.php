@@ -212,7 +212,7 @@
             }
           }
         };
-        xmlhttp.open("POST","getdata.php",true);
+        xmlhttp.open("POST","/home/site/wwwroot/getdata.php",true);
         xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
         xmlhttp.send("id="+id);
 			}
