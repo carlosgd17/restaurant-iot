@@ -17,9 +17,9 @@
         try {
           //self::$cont =  new PDO( "mysql:host=".self::$dbHost.";"."dbname=".self::$dbName, self::$dbUsername, self::$dbUserPassword); 
 		  //echo "<script>console.log('database');</script>";
-		  self::$cont = mysqli_init();
-			mysqli_ssl_set($con,NULL,NULL, "./DigiCertGlobalRootG2.crt.pem", NULL, NULL);
-			mysqli_real_connect($conn, "restaurant-iot.mysql.database.azure.com", "restaurant", "N\$TG_UW6", "restaurant-iot", 3306, MYSQLI_CLIENT_SSL);
+		  //self::$cont = mysqli_init();
+			//mysqli_ssl_set($con,NULL,NULL, "./DigiCertGlobalRootG2.crt.pem", NULL, NULL);
+			//mysqli_real_connect($conn, "restaurant-iot.mysql.database.azure.com", "restaurant", "N\$TG_UW6", "restaurant-iot", 3306, MYSQLI_CLIENT_SSL);
 			
 			//echo "<script>console.log('AFTER');</script>";
 			/*
